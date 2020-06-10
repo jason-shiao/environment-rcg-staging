@@ -1,12 +1,12 @@
 dependencies:
 - alias: expose
   name: exposecontroller
-  repository: http://chartmuseum.jenkins-x.io
-  version: 2.3.118
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 2.3.112
 - alias: cleanup
   name: exposecontroller
-  repository: http://chartmuseum.jenkins-x.io
-  version: 2.3.118
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 2.3.112
 - name: fsa-bcst-uhd-router-svc
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.2
