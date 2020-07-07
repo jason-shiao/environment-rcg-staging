@@ -10,3 +10,7 @@ dependencies:
 - name: fsa-bcst-uhd-router-svc
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.2
+- name: ha-proxy
+  alias: fsa-bcst-uhd-router-proxy
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 0.0.2
