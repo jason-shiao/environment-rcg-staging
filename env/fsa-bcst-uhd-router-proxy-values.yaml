@@ -1,0 +1,19 @@
+fsa-bcst-uhd-router-proxy:
+  image:
+    repository: haproxy
+    tag: 2.1.7
+  haproxy:
+    customConfig: |-
+      defaults
+        mode tcp
+      frontend backend
+        log global
+        bind *:7978
+        use_backend backend
+      backend backend
+        mode tcp
+        server main 10.23.134.11:7978 check
+        server failover 10.23.134.12:7978 check backup
+  service:
+    internalPort: 7978
+    externalPort: 7978
